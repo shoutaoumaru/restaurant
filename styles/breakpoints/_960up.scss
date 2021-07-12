@@ -1,0 +1,666 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.c-txt-lr {
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+.c-txt-md {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
+}
+
+.c-txt-sm {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.c-txt-xs {
+  font-size: 1.2rem;
+}
+
+.view-more__link {
+  & span {
+    font-size: 1.6rem;
+  }
+}
+
+.c-container {
+  padding: 0 15vw;
+}
+
+.c-img {
+  margin: 0 -10vw;
+}
+
+.c-title {
+  top: 0;
+
+  & .txt {
+    padding-left: 52vw;
+
+    &::before {
+      width: 50vw;
+    }
+  }
+}
+
+.c-img01 {
+  & img {
+    height: 50vh;
+    width: 50%;
+  }
+}
+
+.readmore {
+  font-size: 1.2rem;
+}
+
+//#header
+.header {
+  height: auto;
+  width: 100%;
+
+  & .logo__img {
+    & .logo {
+      margin: 0 20px 0 5vw;
+      width: 190px;
+      height: 70px;
+    }
+  }
+
+  & .mobile-container {
+    display: none;
+  }
+
+  & .pc-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw 10vw 0 0;
+
+    & .pc-nav {
+      padding-top: 4px;
+
+      &-list {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      &-item {
+        font-size: 1.4rem;
+        padding-left: 5vw;
+
+        & a {
+          color: $cBlack;
+        }
+      }
+
+      &.inview {
+        & .pc-nav-item {
+          & a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+//#top 
+.p-top {
+  padding-bottom: 10vw;
+
+  & .swiper-container {
+    height: 100vh;
+
+    & .view-sp {
+      display: none;
+    }
+  }
+
+  & .scrolldown {
+    font-size: 20px;
+    bottom: 1vw;
+    left: 48vw;
+
+    &::before {
+      height: 120px;
+      bottom: -35px;
+      width: 2px;
+    }
+  }
+
+  &__txtarea {
+    padding: 5vw;
+
+    & .main {
+      & p {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+//#concept 
+.p-concept {
+
+  & .c-title {
+    top: 6%;
+  }
+
+  & .c-txtarea {
+    top: 25vw;
+    left: 45vw;
+
+    & .ja {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+//#news 
+.p-news {
+  padding-top: 5vw;
+
+  &__tit {
+    margin-bottom: 7vw;
+  }
+
+  &__link {
+    padding: 4vw 0;
+    font-size: 1.2rem;
+  }
+}
+
+//#gallery
+.p-gallery {
+  padding-bottom: 20vw;
+
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & img {
+      width: 50%;
+      border: 10px solid #fff;
+    }
+
+
+
+    & .photo3 {
+      margin-top: 15px;
+      order: 3;
+    }
+
+    & .photo2 {
+      order: 3;
+    }
+  }
+}
+
+//#menu
+.p-menu {
+  & .c-img {
+    width: 80%;
+  }
+
+  .c-title {
+    top: 7%;
+
+    & .txt {
+      padding-left: 52vw;
+      color: $cBlack;
+
+      &::before {
+        width: 50vw;
+      }
+    }
+  }
+
+  & .c-txtarea {
+    top: 25vw;
+    left: 45vw;
+
+    & .ja {
+      font-size: 1.4rem;
+    }
+  }
+
+  & .menu-contents {
+    padding: 10vw 10vw 5vw 10vw;
+
+    & .menu-title {
+      position: absolute;
+      top: 40vw;
+      right: 0;
+      background-color: #f8f5f5;
+      padding: 4vw;
+      margin-right: 5vw;
+      box-shadow: 3px 3px 3px #ebebeb;
+      width: 40%;
+    }
+  }
+}
+
+//#access
+.p-access {
+  padding-bottom: 10vw;
+
+  & .c-img {
+    width: 80%;
+  }
+
+  .c-title {
+    top: 6%;
+
+    & .txt {
+      padding-left: 52vw;
+      color: $cBlack;
+
+      &::before {
+        width: 50vw;
+      }
+    }
+  }
+
+  .c-txtarea {
+    top: 25%;
+    left: 50vw;
+    padding: 4vw;
+
+    & .ja {
+      font-size: 1.4rem;
+    }
+
+  }
+}
+
+//#news
+.p-news {
+  &__tit {
+    padding-top: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  &__item {
+    padding: 3vw 3vw;
+  }
+}
+
+//#info
+.p-info {
+  & h3 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  & .page-link {
+    font-size: 1.5rem;
+  }
+
+  & .icon-insta {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+
+    &::before {
+      left: 20px;
+      top: 8px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+}
+
+//footer
+.footer {
+  & .c-logo {
+    text-align: center;
+
+    & img {
+      height: 50px;
+      width: 160px;
+    }
+  }
+
+  &__info {
+    margin: 0 -5vw;
+
+    & .nav-address {
+      text-align: left;
+    }
+
+    & ul {
+      display: flex;
+
+      & li {
+        width: 48%;
+        text-align: center;
+      }
+
+      & .nav-time {
+        display: block;
+        order: 1;
+      }
+    }
+  }
+
+  & .copyright {
+    text-align: center;
+  }
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    padding-top: 30vw;
+  }
+}
+
+//* *  * * * * * * * concept-page * * * * * * * * * * 
+.cp-top {
+  padding-bottom: 0 !important;
+
+  & .c-title {
+    & span {
+      font-size: 2rem;
+      color: $cBlack;
+    }
+
+    & .num {
+      color: $cWhite;
+    }
+  }
+
+  & img {
+    width: 66%;
+  }
+
+  & .c-txtarea {
+    top: 55vw;
+    left: 40vw;
+  }
+}
+
+.cp-speciality {
+  margin-top: 18vw;
+  margin-bottom: 15vw;
+
+  &__list {
+    padding-left: 5vw;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vw;
+
+    &.add {
+      flex-direction: row-reverse;
+    }
+
+    & img {
+      width: 48%;
+    }
+  }
+
+  &__txtarea {
+    &.add {
+      padding-right: 5vw;
+    }
+
+    &.even {
+      padding-left: 5vw;
+    }
+  }
+}
+
+//* *  * * * * * * * gallery-page * * * * * * * * * *
+.superwrapper {
+  .gal-top {
+
+    & .c-title {
+      & span {
+        font-size: 2rem;
+        color: $cBlack;
+
+        &::before {
+          background-color: $cBlack;
+        }
+      }
+    }
+
+    & img {
+      width: 66%;
+    }
+  }
+
+  .gal-contents {
+    padding-bottom: 20vw;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 40%;
+      height: 500px;
+      margin: 5vw 5vw 8vw 5vw;
+
+      & img {
+        height: 50%;
+      }
+    }
+  }
+}
+
+//* * * * * * * * * menu-page * * * * * * * * * *
+.superwrapper {
+  .menu-top {
+    margin-bottom: 10vw;
+
+    &__img__cover {
+      width: 66%;
+    }
+
+    & img {
+      width: 66%;
+    }
+
+    & .c-title {
+      & .txt {
+        color: $cBlack;
+      }
+
+      & span {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .menu-contents {
+    margin-bottom: 10vw;
+
+    & .menu-title {
+
+      & span {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1.2rem;
+      }
+    }
+
+    & .tab-group {
+      font-size: 1.5rem;
+    }
+
+    & .lunch {
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      &__photo {
+        padding: 0 1vw 3vw 0;
+
+        & img {
+          width: 60%;
+        }
+      }
+
+      &__item {
+        width: 50%;
+      }
+    }
+
+    & .dinner {
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__txt {
+        font-size: 1.2rem;
+        width: 50%;
+      }
+    }
+
+    & .drink {
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      &__block {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+
+        & .c-drink {
+          padding-left: 5vw;
+        }
+      }
+
+      &__item {
+        padding-bottom: 10vw;
+      }
+    }
+  }
+}
+
+//* * * * * * * * * access-page * * * * * * * * * *
+#c-access {
+  & .c-access-wrap {
+
+    display: flex;
+    justify-content: space-between;
+
+    & .c-container {
+      padding: 0 5vw;
+    }
+
+    & .g-map {
+      width: 50%;
+    }
+
+    & .p-info {
+      width: 50%;
+    }
+  }
+
+  .ac-top {
+
+    & .c-title {
+      & .txt {
+        color: $cBlack;
+      }
+
+      & span {
+        font-size: 2.5rem;
+      }
+    }
+
+    .access-top__img {
+      height: 60vh;
+
+      & img {
+        width: 66%;
+      }
+    }
+  }
+
+  .p-info {
+    & h3 {
+      padding-bottom: 1vw;
+    }
+
+    & .c-txt-sm,
+    & .c-txt-xs,
+    &__time {
+      padding-bottom: 1vw;
+    }
+
+    & .c-txt-xs {
+      font-size: .9rem;
+    }
+
+    & .page-link {
+      font-size: 1.4rem;
+    }
+  }
+
+  .g-map {
+    & h3 {
+      font-size: 2rem;
+    }
+
+    &__wrap {
+      margin: 5vw 0;
+      padding: 5vw 5vw;
+
+      & iframe {
+        width: 100%;
+        height: 400px;
+      }
+
+      & .google-map-link {
+        & a {
+          font-size: 22px;
+          padding-left: 30px;
+
+          &::before {
+            top: 8px;
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__list {
+    padding-top: 6vw;
+  }
+
+  &__contents {
+    padding: 8vw 0;
+  }
+}

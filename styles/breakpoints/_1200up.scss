@@ -1,0 +1,196 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+
+.c-txt-lr {
+  font-size: 2.8rem;
+}
+
+.c-txt-sm {
+  font-size: 1rem;
+}
+
+.c-txt-xs {
+  font-size: 1rem;
+}
+
+.c-container {
+  padding: 0 15vw;
+}
+
+.view-pc {
+  display: none;
+}
+
+//#info
+.p-info {
+  & h3 {
+    font-size: 1.4rem;
+  }
+
+  .page-link {
+    font-size: 1.2rem;
+  }
+}
+
+//#concept
+.p-concept {
+  padding-bottom: 10vw;
+
+  .c-title {
+    top: 4%;
+  }
+
+  .c-txtarea {
+    top: 10%;
+    padding: 2vw;
+
+  }
+}
+
+//#menu {
+.p-menu {
+  .c-title {
+    top: 1%;
+  }
+
+  .c-txtarea {
+    top: 2%;
+    padding: 2vw;
+
+  }
+}
+
+//#access
+.p-access {
+  & .c-txtarea {
+    top: -8vw;
+  }
+
+  & .c-txt-sm {
+    margin-top: 2vw;
+    line-height: 4;
+  }
+
+  & .view-pc {
+    display: block;
+  }
+}
+
+//#header
+.header {
+  height: 110px;
+
+  & .logo {
+    margin: 40px 20px 0 80px;
+    width: 300px;
+    height: 60px;
+  }
+
+  & .pc-container {
+    padding: 3vw 10vw 0 0;
+
+    & .pc-nav {
+      padding-top: 9px;
+    }
+  }
+}
+
+//#news
+.p-news {
+  &__tit {
+    padding-top: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  &__item {
+    padding: 2vw 3vw;
+  }
+}
+
+//#footer 
+.footer {
+  padding: 8vw 0;
+}
+
+//mobile-menu
+.mobile-menu {
+  &__ul {
+    padding-top: 10vw;
+  }
+}
+
+//* * * * * * concept-page * * * * * * *
+.cp-top {
+  margin-bottom: 25vw;
+
+  & .c-title {
+    & p {
+      padding-top: 1vw;
+    }
+  }
+
+  & .c-txtarea {
+    top: 30vw;
+    left: 40vw;
+    padding-bottom: 0;
+
+    & .ja {
+      font-size: 1rem;
+    }
+  }
+}
+
+//* * * * * * access-page * * * * * * *
+#c-access {
+  & .c-access-wrap {
+    padding: 0 10vw 10vw 10vw;
+  }
+
+  & .p-info {
+    margin-top: 8vw;
+    margin-bottom: 0;
+  }
+
+  & .icon-insta {
+    padding-left: 7vw;
+  }
+}
+
+//* *  * * * * * * * gallery-page * * * * * * * * * *
+.superwrapper {
+  .gal-top {
+    margin-bottom: 10vw;
+  }
+
+  .gal-contents {
+    padding-bottom: 5vw;
+
+    &__item {
+      width: 40%;
+      height: 500px;
+      margin: 5vw 5vw 0 5vw;
+
+      & img {
+        height: 50%;
+      }
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__list {
+    padding-top: 6vw;
+  }
+
+  &__contents {
+    padding: 8vw 0;
+  }
+}
