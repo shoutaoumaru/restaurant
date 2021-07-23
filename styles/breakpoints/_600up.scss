@@ -31,8 +31,6 @@ Stylesheet: 600px以上のモニタで適用
 
 //header
 .header {
-  height: 90px;
-
   & .sp-navbtn {
     display: none;
   }
@@ -56,7 +54,7 @@ Stylesheet: 600px以上のモニタで適用
 //#top
 .p-top {
   & .swiper-container {
-    height: 85vh;
+    height: 100vh;
   }
 
   & .scrolldown {
@@ -126,7 +124,7 @@ Stylesheet: 600px以上のモニタで適用
   padding-bottom: 20vw;
 
   .c-txtarea {
-    top: 6%;
+    top: 17%;
   }
 }
 
