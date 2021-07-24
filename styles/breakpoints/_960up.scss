@@ -78,12 +78,17 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 4vw 10vw 0 0;
 
     & .pc-nav {
-      padding-top: 4px;
+      padding-top: 8px;
 
       &-list {
         display: flex;
@@ -150,11 +155,15 @@ Stylesheet: 960px以上のモニタで適用
 
   & .c-title {
     top: 6%;
+
+    & .txt {
+      color: $cBlack;
+    }
   }
 
   & .c-txtarea {
     top: 25vw;
-    left: 45vw;
+    left: 40vw;
 
     & .ja {
       font-size: 1.4rem;
@@ -190,10 +199,7 @@ Stylesheet: 960px以上のモニタで適用
       border: 10px solid #fff;
     }
 
-
-
     & .photo3 {
-      margin-top: 15px;
       order: 3;
     }
 
@@ -224,7 +230,7 @@ Stylesheet: 960px以上のモニタで適用
 
   & .c-txtarea {
     top: 25vw;
-    left: 45vw;
+    left: 40vw;
 
     & .ja {
       font-size: 1.4rem;
@@ -270,7 +276,7 @@ Stylesheet: 960px以上のモニタで適用
 
   .c-txtarea {
     top: 25%;
-    left: 50vw;
+    left: 40vw;
     padding: 4vw;
 
     & .ja {
@@ -352,13 +358,6 @@ Stylesheet: 960px以上のモニタで適用
 
   & .copyright {
     text-align: center;
-  }
-}
-
-//mobile-menu
-.mobile-menu {
-  &__ul {
-    padding-top: 30vw;
   }
 }
 

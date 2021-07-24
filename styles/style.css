@@ -145,8 +145,6 @@ img {
 }
 
 .readmore {
-  padding-left: 3vw;
-  padding-right: 8vw;
   padding-bottom: 1.5vw;
   letter-spacing: 3px;
   border-bottom: 1px solid #dfdfdf;
@@ -391,7 +389,7 @@ img {
 }
 
 .p-concept .c-txtarea {
-  top: 28%;
+  top: 38%;
 }
 
 .p-concept .c-title {
@@ -433,7 +431,7 @@ img {
 }
 
 .p-menu .c-txtarea {
-  top: 12%;
+  top: 40%;
 }
 
 .p-access {
@@ -450,7 +448,7 @@ img {
 }
 
 .p-access .c-txtarea {
-  top: 40%;
+  top: 60%;
 }
 
 .p-news {
@@ -2006,6 +2004,9 @@ Stylesheet: 600px以上のモニタで適用
   .c-img01 img {
     height: 45vh;
   }
+  .readmore {
+    font-size: 20px;
+  }
   .header .sp-navbtn {
     display: none;
   }
@@ -2032,7 +2033,7 @@ Stylesheet: 600px以上のモニタで適用
     height: 45vh;
   }
   .p-concept .c-txtarea {
-    top: 38%;
+    top: 58%;
   }
   .p-concept .c-txtarea .ja {
     font-size: .8rem;
@@ -2060,13 +2061,13 @@ Stylesheet: 600px以上のモニタで適用
     display: none;
   }
   .p-menu .c-txtarea {
-    top: 14%;
+    top: 50%;
   }
   .p-access {
     padding-bottom: 20vw;
   }
   .p-access .c-txtarea {
-    top: 17%;
+    top: 58%;
   }
   .p-news {
     padding-bottom: 15vw;
@@ -2263,6 +2264,11 @@ Stylesheet: 960px以上のモニタで適用
     display: none;
   }
   .header .pc-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2272,7 +2278,7 @@ Stylesheet: 960px以上のモニタで適用
     padding: 4vw 10vw 0 0;
   }
   .header .pc-container .pc-nav {
-    padding-top: 4px;
+    padding-top: 8px;
   }
   .header .pc-container .pc-nav-list {
     display: -webkit-box;
@@ -2320,9 +2326,12 @@ Stylesheet: 960px以上のモニタで適用
   .p-concept .c-title {
     top: 6%;
   }
+  .p-concept .c-title .txt {
+    color: #3b3b3b;
+  }
   .p-concept .c-txtarea {
     top: 25vw;
-    left: 45vw;
+    left: 40vw;
   }
   .p-concept .c-txtarea .ja {
     font-size: 1.4rem;
@@ -2355,7 +2364,6 @@ Stylesheet: 960px以上のモニタで適用
     border: 10px solid #fff;
   }
   .p-gallery__img .photo3 {
-    margin-top: 15px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -2380,7 +2388,7 @@ Stylesheet: 960px以上のモニタで適用
   }
   .p-menu .c-txtarea {
     top: 25vw;
-    left: 45vw;
+    left: 40vw;
   }
   .p-menu .c-txtarea .ja {
     font-size: 1.4rem;
@@ -2417,7 +2425,7 @@ Stylesheet: 960px以上のモニタで適用
   }
   .p-access .c-txtarea {
     top: 25%;
-    left: 50vw;
+    left: 40vw;
     padding: 4vw;
   }
   .p-access .c-txtarea .ja {
@@ -2477,9 +2485,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .footer .copyright {
     text-align: center;
-  }
-  .mobile-menu__ul {
-    padding-top: 30vw;
   }
   .cp-top {
     padding-bottom: 0 !important;
@@ -2732,9 +2737,6 @@ Stylesheet: 1200px以上のモニタで適用
   .c-container {
     padding: 0 15vw;
   }
-  .view-pc {
-    display: none;
-  }
   .p-info h3 {
     font-size: 1.4rem;
   }
@@ -2748,18 +2750,18 @@ Stylesheet: 1200px以上のモニタで適用
     top: 4%;
   }
   .p-concept .c-txtarea {
-    top: 10%;
+    top: 30%;
     padding: 2vw;
   }
   .p-menu .c-title {
     top: 1%;
   }
   .p-menu .c-txtarea {
-    top: 2%;
+    top: 20%;
     padding: 2vw;
   }
   .p-access .c-txtarea {
-    top: -8vw;
+    top: 30%;
   }
   .p-access .c-txt-sm {
     margin-top: 2vw;
@@ -2767,9 +2769,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .p-access .view-pc {
     display: block;
-  }
-  .header {
-    height: 110px;
   }
   .header .logo {
     margin: 40px 20px 0 80px;
@@ -2791,9 +2790,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .footer {
     padding: 8vw 0;
-  }
-  .mobile-menu__ul {
-    padding-top: 10vw;
   }
   .cp-top {
     margin-bottom: 25vw;

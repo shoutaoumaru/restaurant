@@ -20,10 +20,6 @@ Stylesheet: 1200px以上のモニタで適用
   padding: 0 15vw;
 }
 
-.view-pc {
-  display: none;
-}
-
 //#info
 .p-info {
   & h3 {
@@ -44,7 +40,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 
   .c-txtarea {
-    top: 10%;
+    top: 30%;
     padding: 2vw;
 
   }
@@ -57,7 +53,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 
   .c-txtarea {
-    top: 2%;
+    top: 20%;
     padding: 2vw;
 
   }
@@ -66,7 +62,7 @@ Stylesheet: 1200px以上のモニタで適用
 //#access
 .p-access {
   & .c-txtarea {
-    top: -8vw;
+    top: 30%;
   }
 
   & .c-txt-sm {
@@ -81,8 +77,6 @@ Stylesheet: 1200px以上のモニタで適用
 
 //#header
 .header {
-  height: 110px;
-
   & .logo {
     margin: 40px 20px 0 80px;
     width: 300px;
@@ -113,13 +107,6 @@ Stylesheet: 1200px以上のモニタで適用
 //#footer 
 .footer {
   padding: 8vw 0;
-}
-
-//mobile-menu
-.mobile-menu {
-  &__ul {
-    padding-top: 10vw;
-  }
 }
 
 //* * * * * * concept-page * * * * * * *

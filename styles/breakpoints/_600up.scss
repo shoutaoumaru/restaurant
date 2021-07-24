@@ -29,6 +29,10 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
+.readmore {
+  font-size: 20px;
+}
+
 //header
 .header {
   & .sp-navbtn {
@@ -74,7 +78,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   .c-txtarea {
-    top: 38%;
+    top: 58%;
 
     & .ja {
       font-size: .8rem;
@@ -115,7 +119,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 
   & .c-txtarea {
-    top: 14%;
+    top: 50%;
   }
 }
 
@@ -124,7 +128,7 @@ Stylesheet: 600px以上のモニタで適用
   padding-bottom: 20vw;
 
   .c-txtarea {
-    top: 17%;
+    top: 58%;
   }
 }
 
