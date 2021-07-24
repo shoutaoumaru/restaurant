@@ -2330,7 +2330,7 @@ Stylesheet: 960px以上のモニタで適用
     color: #3b3b3b;
   }
   .p-concept .c-txtarea {
-    top: 25vw;
+    top: 30vw;
     left: 40vw;
   }
   .p-concept .c-txtarea .ja {
@@ -2373,6 +2373,9 @@ Stylesheet: 960px以上のモニタで適用
         -ms-flex-order: 3;
             order: 3;
   }
+  .p-menu {
+    padding-bottom: 20vw;
+  }
   .p-menu .c-img {
     width: 80%;
   }
@@ -2387,7 +2390,7 @@ Stylesheet: 960px以上のモニタで適用
     width: 50vw;
   }
   .p-menu .c-txtarea {
-    top: 25vw;
+    top: 40vw;
     left: 40vw;
   }
   .p-menu .c-txtarea .ja {
@@ -2424,7 +2427,7 @@ Stylesheet: 960px以上のモニタで適用
     width: 50vw;
   }
   .p-access .c-txtarea {
-    top: 25%;
+    top: 55%;
     left: 40vw;
     padding: 4vw;
   }
@@ -2438,9 +2441,15 @@ Stylesheet: 960px以上のモニタで適用
   .p-news__item {
     padding: 3vw 3vw;
   }
+  .p-info {
+    margin-bottom: 15vw;
+  }
   .p-info h3 {
     font-size: 1.6rem;
     letter-spacing: 2px;
+  }
+  .p-info__time {
+    padding-bottom: 0;
   }
   .p-info .page-link {
     font-size: 1.5rem;
@@ -2464,6 +2473,7 @@ Stylesheet: 960px以上のモニタで適用
   }
   .footer__info {
     margin: 0 -5vw;
+    display: block;
   }
   .footer__info .nav-address {
     text-align: left;

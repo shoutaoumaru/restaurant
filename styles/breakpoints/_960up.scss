@@ -162,7 +162,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .c-txtarea {
-    top: 25vw;
+    top: 30vw;
     left: 40vw;
 
     & .ja {
@@ -211,6 +211,8 @@ Stylesheet: 960px以上のモニタで適用
 
 //#menu
 .p-menu {
+  padding-bottom: 20vw;
+
   & .c-img {
     width: 80%;
   }
@@ -229,7 +231,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .c-txtarea {
-    top: 25vw;
+    top: 40vw;
     left: 40vw;
 
     & .ja {
@@ -275,7 +277,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   .c-txtarea {
-    top: 25%;
+    top: 55%;
     left: 40vw;
     padding: 4vw;
 
@@ -300,9 +302,15 @@ Stylesheet: 960px以上のモニタで適用
 
 //#info
 .p-info {
+  margin-bottom: 15vw;
+
   & h3 {
     font-size: 1.6rem;
     letter-spacing: 2px;
+  }
+
+  &__time {
+    padding-bottom: 0;
   }
 
   & .page-link {
@@ -336,6 +344,7 @@ Stylesheet: 960px以上のモニタで適用
 
   &__info {
     margin: 0 -5vw;
+    display: block;
 
     & .nav-address {
       text-align: left;
