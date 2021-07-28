@@ -1,21 +1,14 @@
+<?php 
+/* Template Name: menu
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>飲食店テンプレート1/MENU</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400&family=Noto+Serif+JP:wght@200;400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/contents/contents.css">
+  <?php get_header(); ?>
 </head>
-
 <body>
   <div class="superwrapper animsition">
     <header id="header" class="header">
@@ -43,19 +36,19 @@
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/"><span>TOP</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/')); ?>"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/concept/concept.html"><span>CONCEPT</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/concept')); ?>"><span>CONCEPT</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/gallery/gallery.html"><span>GALLERY</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/gallery')); ?>"><span>GALLERY</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/access/access.html"><span>ACCESS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('access')); ?>"><span>ACCESS</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>NEWS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>NEWS</span></a>
             </li>
           </ul>
         </nav>
@@ -78,7 +71,7 @@
             <span class="num">03</span>
             <span class="txt">Menu</span>
           </h3>
-          <img src="/images/home/steak_1@pc.jpg" alt="food">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/steak_1@pc.jpg" alt="food">
           <div class="menu-top__img__cover"></div>
         </div>
       </div>
@@ -255,7 +248,7 @@
     <footer class="footer">
       <div class="c-container">
         <div class="c-logo">
-          <img src="/images/home/riv_logo-white.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/riv_logo-white.png" alt="">
         </div>
 
         <div class="footer__info">
@@ -293,22 +286,22 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/concept/concept.html">CONCEPT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/concept')); ?>">CONCEPT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/gallery/gallery.html">GALLERY</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/gallery')); ?>">GALLERY</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">MENU</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">MENU</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/access/access.html">ACCESS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/access')); ?>">ACCESS</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -330,14 +323,6 @@
     <!------ /.mobile-menu ----->
   </div>
   <!-- .superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../scripts/vendor/animsition.min.js"></script>
-  <script src="../scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/libs/tab.js"></script>
-  <script src="../scripts/contents.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
-
 </html>

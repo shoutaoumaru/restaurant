@@ -1,19 +1,13 @@
+<?php 
+/* Template Name: concept
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>飲食店テンプレート1/CONCEPT</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400&family=Noto+Serif+JP:wght@200;400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/contents/contents.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body>
@@ -46,16 +40,16 @@
               <a class="pc-nav-link animsition-link" href="/"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/gallery/gallery.html"><span>GALLERY</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/gallery')); ?>"><span>GALLERY</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/menu/menu.html"><span>MENU</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>"><span>MENU</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/access/access.html"><span>ACCESS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/access')); ?>"><span>ACCESS</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>NEWS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>NEWS</span></a>
             </li>
           </ul>
         </nav>
@@ -78,10 +72,10 @@
             <span class="num">01</span>
             <span class="txt">Concept</span>
           </h3>
-          <img src="/images/home/salad_1@pc.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/salad_1@pc.jpg" alt="">
         </div>
-        <div class="c-txtarea rellax">
-          <p class=" ja">90日熟成の神戸ビーフ、朝採れ野菜、地物の新鮮な魚介。とことん厳選した素材にこだわり、極上な「食の体験」をお手軽に。</p>
+        <div class="c-txtarea">
+          <p class="ja">90日熟成の神戸ビーフ、朝採れ野菜、地物の新鮮な魚介。とことん厳選した素材にこだわり、極上な「食の体験」をお手軽に。</p>
         </div>
       </div>
     </div>
@@ -91,7 +85,7 @@
         <h2 class="cp-title clip-js2 left">Our Speciality</h2>
         <div class="cp-speciality__list appear up">
           <div class="cp-speciality__item add item">
-            <img class="cp-speciality__img" src="/images/home/steak_3@pc.jpg" alt="">
+            <img class="cp-speciality__img" src="<?php echo get_template_directory_uri(); ?>/images/home/steak_3@pc.jpg" alt="">
             <div class="cp-speciality__txtarea add">
               <h3 class="cp-speciality__subtit">
                 厳選素材のうまみを<br class="view-pc">引き出すこと
@@ -102,7 +96,7 @@
             </div>
           </div>
           <div class="cp-speciality__item even item">
-            <img class="cp-speciality__img" src="/images/home/vegetables_1@pc.jpg" alt="">
+            <img class="cp-speciality__img" src="<?php echo get_template_directory_uri(); ?>/images/home/vegetables_1@pc.jpg" alt="">
             <div class="cp-speciality__txtarea even">
               <h3 class="cp-speciality__subtit">
                 朝採れの新鮮な<br class="view-pc">オーガニック野菜を使用
@@ -113,7 +107,7 @@
             </div>
           </div>
           <div class="cp-speciality__item add item">
-            <img class="cp-speciality__img" src="/images/home/spice_1@pc.jpg" alt="">
+            <img class="cp-speciality__img" src="<?php echo get_template_directory_uri(); ?>/images/home/spice_1@pc.jpg" alt="">
             <div class="cp-speciality__txtarea add">
               <h3 class="cp-speciality__subtit">
                 味が何層にもふくらむ自然<br class="view-pc">調味料を
@@ -124,7 +118,7 @@
             </div>
           </div>
           <div class="cp-speciality__item even item">
-            <img class="cp-speciality__img" src="/images/home/ocean_2.jpg" alt="">
+            <img class="cp-speciality__img" src="<?php echo get_template_directory_uri(); ?>/images/home/ocean_2.jpg" alt="">
             <div class="cp-speciality__txtarea even">
               <h3 class="cp-speciality__subtit">
                 四季の表情豊かな<br class="view-pc">絶景に囲まれて
@@ -141,7 +135,7 @@
     <footer class="footer">
       <div class="c-container">
         <div class="c-logo">
-          <img src="/images/home/riv_logo-white.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/riv_logo-white.png" alt="">
         </div>
         <div class="footer__info">
           <ul class="footer__item c-txt-xs">
@@ -178,22 +172,22 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/concept/concept.html">CONCEPT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/concept')); ?>">CONCEPT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/gallery/gallery.html">GALLERY</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/gallery')); ?>">GALLERY</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/menu.html">MENU</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">MENU</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/access/access.html">ACCESS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/access')); ?>">ACCESS</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">
@@ -215,16 +209,7 @@
     <!------ /.mobile-menu ----->
   </div>
   <!-- .superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-  <script src="../scripts/libs/scroll.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
-  <script src="../scripts/vendor/rellax.min.js"></script>
-  <script src="../scripts/libs/parallax.js"></script>
-  <script src="../scripts/contents.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
 
 </html>
