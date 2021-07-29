@@ -63,7 +63,6 @@
     <section class="news">
       <div class="c-container">
         <ul class="p-news__list">
-        <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
           <li class="p-news__block">
             <div class="p-news__title">
               <span class="p-news__date"><?php echo get_the_date(); ?></span>
@@ -74,8 +73,6 @@
               <p><?php the_content(); ?></p>
             </div>
           </li>
-          <?php endwhile; ?>
-          <?php endif; ?>
         </ul>
         <a class="more-link animsition-link" href="/news"><span class="readmore">一覧へ戻る</span></a>
       </div>
