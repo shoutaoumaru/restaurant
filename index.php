@@ -1,3 +1,7 @@
+<?php 
+/* Template Name: top
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
