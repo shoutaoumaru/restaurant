@@ -37,7 +37,7 @@ Stylesheet: CONCEPT
 }
 
 .cp-top .c-txtarea .ja {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .cp-speciality {
@@ -57,7 +57,7 @@ Stylesheet: CONCEPT
 }
 
 .cp-speciality__txt {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 /******************************************************************
@@ -167,7 +167,7 @@ Stylesheet: MENU
 
 .menu-contents .menu-title p {
   padding-top: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 100;
   line-height: 2.5;
 }
@@ -282,7 +282,7 @@ Stylesheet: ACCESS
 }
 
 .g-map__wrap .google-map-link a::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 4px;
@@ -300,7 +300,7 @@ Stylesheet: NEWS
 
 ******************************************************************/
 .news {
-  padding-top: 40vw;
+  padding-top: 5vw;
 }
 
 .news .c-container {
@@ -334,7 +334,7 @@ Stylesheet: NEWS
   width: 10vw;
   height: 10vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -379,7 +379,7 @@ Stylesheet: NEWS
 
 .news .p-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .news .p-news__title {
