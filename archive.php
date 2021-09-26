@@ -61,6 +61,10 @@
       <!-- /.nav-btn -->
     </header>
     <!-- /#header -->
+    <div class="c-top-view">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/home/ocean_2.jpg" alt="" />
+      </div>
+      <!-- /.c-top-view -->
     <section class="news">
       <div class="c-container">
         <h3 class="c-title02  clip-js2 left">

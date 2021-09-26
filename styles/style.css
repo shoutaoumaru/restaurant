@@ -1,7 +1,11 @@
 @charset "UTF-8";
 body {
-  font-family: 'Josefin Slab', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Josefin Slab", serif;
+  font-family: "Noto Serif JP", serif;
+}
+
+body.hidden {
+  overflow: hidden;
 }
 
 img {
@@ -27,14 +31,14 @@ img {
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #474747;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: #474747;
@@ -42,7 +46,7 @@ img {
 
 .page-link {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #424242;
 }
 
@@ -78,7 +82,7 @@ img {
   position: absolute;
   top: 53%;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 1px;
   width: 8vw;
@@ -109,7 +113,7 @@ img {
   position: absolute;
   top: 50%;
   left: 0;
-  content: '';
+  content: "";
   display: inline-block;
   height: 1px;
   width: 8vw;
@@ -159,7 +163,7 @@ img {
 }
 
 .icon-map::before {
-  content: '';
+  content: "";
   display: block;
   background-image: url(../images/home/icon-map.png);
   background-position: center;
@@ -204,7 +208,7 @@ img {
 }
 
 .icon-insta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -232,19 +236,19 @@ img {
   margin: 3vw 0 0 5vw;
   height: 44px;
   width: 110px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header .menu-open.logo {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background-image: url(../images/home/riv_logo.png) !important;
 }
 
 .header .inview.logo {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background-image: url(../images/home/riv_logo-white.png);
 }
 
@@ -257,7 +261,7 @@ img {
   bottom: 0;
   left: 0;
   background-color: #3b3b3b;
-  opacity: .7;
+  opacity: 0.7;
   height: 7.5vh;
   width: 100%;
   z-index: 2000;
@@ -341,7 +345,7 @@ img {
 
 .p-top__txtarea .sub p {
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 2;
   color: #fff;
 }
@@ -361,7 +365,7 @@ img {
 }
 
 .p-info h3 {
-  font-size: .95rem;
+  font-size: 0.95rem;
   color: #3b3b3b;
   padding-bottom: 4vw;
 }
@@ -472,7 +476,7 @@ img {
 .p-news__date {
   letter-spacing: 2px;
   border: 1px solid #f0f0f0;
-  padding: .5vw;
+  padding: 0.5vw;
   background-color: #fafafa;
   border-radius: 5%;
 }
@@ -521,7 +525,7 @@ img {
   margin-top: 4vw;
   padding-left: 5vw;
   color: #f0f0f0;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -529,7 +533,7 @@ img {
   position: absolute;
   top: 4px;
   left: 0;
-  content: '';
+  content: "";
   display: block;
   height: 17px;
   width: 15px;
@@ -583,7 +587,7 @@ img {
 .footer .copyright {
   color: #fff;
   font-weight: 100;
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 5px;
 }
 
@@ -626,7 +630,7 @@ Stylesheet: CONCEPT
 }
 
 .cp-top .c-txtarea .ja {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .cp-speciality {
@@ -646,7 +650,7 @@ Stylesheet: CONCEPT
 }
 
 .cp-speciality__txt {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 /******************************************************************
@@ -756,7 +760,7 @@ Stylesheet: MENU
 
 .menu-contents .menu-title p {
   padding-top: 5vw;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 100;
   line-height: 2.5;
 }
@@ -871,7 +875,7 @@ Stylesheet: ACCESS
 }
 
 .g-map__wrap .google-map-link a::before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   top: 4px;
@@ -889,7 +893,7 @@ Stylesheet: NEWS
 
 ******************************************************************/
 .news {
-  padding-top: 40vw;
+  padding-top: 10vw;
 }
 
 .news .c-container {
@@ -923,7 +927,7 @@ Stylesheet: NEWS
   width: 10vw;
   height: 10vw;
   border-radius: 100%;
-  border: 1px solid #C4CCD1;
+  border: 1px solid #c4ccd1;
   background: #fff;
   margin: 0 1.3vw;
 }
@@ -968,7 +972,7 @@ Stylesheet: NEWS
 
 .news .p-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .news .p-news__title {
@@ -2385,7 +2389,7 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 1.1rem;
   }
   .c-txt-xs {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .c-container {
     padding: 0 10vw;
@@ -2428,7 +2432,7 @@ Stylesheet: 600px以上のモニタで適用
     top: 58%;
   }
   .p-concept .c-txtarea .ja {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .p-concept .p-speciality {
     margin-top: 30vw;
@@ -2441,7 +2445,7 @@ Stylesheet: 600px以上のモニタで適用
     margin: 3vw 0;
   }
   .p-concept .p-speciality__txt {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .p-gallery {
     padding-bottom: 30vw;
@@ -2575,7 +2579,7 @@ Stylesheet: 600px以上のモニタで適用
     width: 60%;
   }
   .superwrapper .news {
-    padding-top: 20vw;
+    padding-top: 10vw;
   }
   .superwrapper .news .c-container {
     padding: 0 10vw 10vw 10vw;
