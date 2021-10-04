@@ -1,6 +1,7 @@
 body {
   font-family: "Josefin Slab", serif;
   font-family: "Noto Serif JP", serif;
+
   &.hidden {
     overflow: hidden;
   }
@@ -90,7 +91,7 @@ img {
   padding-bottom: 10vw;
 
   & span {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 300;
     color: $cBlack;
     letter-spacing: 2vw;
@@ -201,12 +202,15 @@ img {
   color: $cBlack;
   border-bottom: 1px solid $cGray;
   padding-bottom: 5px;
+  font-size: 24px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    margin: auto;
     background-image: url(../images/home/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -375,12 +379,6 @@ img {
   & .close {
     padding: 0;
   }
-
-  &__sns {
-    & > h3 {
-      letter-spacing: 3px;
-    }
-  }
 }
 
 //#concept
@@ -405,17 +403,17 @@ img {
   }
 }
 
-//#gallery
-.p-gallery {
+//#instagram
+.p-instagram {
   padding-bottom: 35vw;
 
   &__img {
     padding: 0 5vw;
   }
 
-  & .more-link {
-    display: block;
-    margin-top: 10vw;
+  .insta-link {
+    margin-top: 50px;
+    text-align: right;
   }
 }
 
@@ -651,54 +649,6 @@ Stylesheet: CONCEPT
 
   &__txt {
     font-size: 0.8rem;
-  }
-}
-
-/******************************************************************
-
-Stylesheet: GALLERY
-
-******************************************************************/
-.gal-top {
-  position: relative;
-  margin-bottom: 22vw;
-
-  &__img {
-    height: 60vh;
-  }
-
-  & .c-title {
-    top: 35%;
-    left: 8%;
-
-    & span {
-      color: #fff;
-
-      &::before {
-        background-color: #fff;
-      }
-    }
-
-    & p {
-      padding-top: 7vw;
-      font-size: 1.3rem;
-      line-height: 2;
-      color: $cBlack;
-      font-weight: 100;
-    }
-  }
-
-  .c-txt-md {
-    margin-top: 5vw;
-    text-align: center;
-  }
-}
-
-.gal-contents {
-  &__txtarea {
-    text-align: center;
-    margin: 5vw 0 25vw 0;
-    letter-spacing: 3px;
   }
 }
 
