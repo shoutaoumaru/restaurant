@@ -2110,12 +2110,6 @@ Stylesheet: 600px以上のモニタで適用
   .cp-top .c-txtarea {
     top: 80vw;
   }
-  .superwrapper .gal-top {
-    margin-bottom: 15vw;
-  }
-  .superwrapper .gal-top .c-title span {
-    font-size: 2.5rem;
-  }
   .superwrapper .menu-top {
     margin-bottom: 10vw;
   }
@@ -2547,37 +2541,6 @@ Stylesheet: 960px以上のモニタで適用
   .cp-speciality__txtarea.even {
     padding-left: 5vw;
   }
-  .superwrapper .gal-top .c-title span {
-    font-size: 2rem;
-    color: #3b3b3b;
-  }
-  .superwrapper .gal-top .c-title span::before {
-    background-color: #3b3b3b;
-  }
-  .superwrapper .gal-top img {
-    width: 66%;
-  }
-  .superwrapper .gal-contents {
-    padding-bottom: 20vw;
-  }
-  .superwrapper .gal-contents__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .superwrapper .gal-contents__item {
-    width: 40%;
-    height: 500px;
-    margin: 5vw 5vw 8vw 5vw;
-  }
-  .superwrapper .gal-contents__item img {
-    height: 50%;
-  }
   .superwrapper .menu-top {
     margin-bottom: 10vw;
   }
@@ -2827,20 +2790,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   #c-access .icon-insta {
     padding-left: 7vw;
-  }
-  .superwrapper .gal-top {
-    margin-bottom: 10vw;
-  }
-  .superwrapper .gal-contents {
-    padding-bottom: 5vw;
-  }
-  .superwrapper .gal-contents__item {
-    width: 40%;
-    height: 500px;
-    margin: 5vw 5vw 0 5vw;
-  }
-  .superwrapper .gal-contents__item img {
-    height: 50%;
   }
   .c-news-sl .c-container {
     padding: 0 12vw;

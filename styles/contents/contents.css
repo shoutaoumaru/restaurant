@@ -62,52 +62,6 @@ Stylesheet: CONCEPT
 
 /******************************************************************
 
-Stylesheet: GALLERY
-
-******************************************************************/
-.gal-top {
-  position: relative;
-  margin-bottom: 22vw;
-}
-
-.gal-top__img {
-  height: 60vh;
-}
-
-.gal-top .c-title {
-  top: 35%;
-  left: 8%;
-}
-
-.gal-top .c-title span {
-  color: #fff;
-}
-
-.gal-top .c-title span::before {
-  background-color: #fff;
-}
-
-.gal-top .c-title p {
-  padding-top: 7vw;
-  font-size: 1.3rem;
-  line-height: 2;
-  color: #3b3b3b;
-  font-weight: 100;
-}
-
-.gal-top .c-txt-md {
-  margin-top: 5vw;
-  text-align: center;
-}
-
-.gal-contents__txtarea {
-  text-align: center;
-  margin: 5vw 0 25vw 0;
-  letter-spacing: 3px;
-}
-
-/******************************************************************
-
 Stylesheet: MENU
 
 ******************************************************************/

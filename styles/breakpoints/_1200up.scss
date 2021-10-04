@@ -146,27 +146,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//* *  * * * * * * * gallery-page * * * * * * * * * *
-.superwrapper {
-  .gal-top {
-    margin-bottom: 10vw;
-  }
-
-  .gal-contents {
-    padding-bottom: 5vw;
-
-    &__item {
-      width: 40%;
-      height: 500px;
-      margin: 5vw 5vw 0 5vw;
-
-      & img {
-        height: 50%;
-      }
-    }
-  }
-}
-
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
   & .c-container {

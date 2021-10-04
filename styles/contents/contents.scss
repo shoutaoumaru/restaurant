@@ -66,54 +66,6 @@ Stylesheet: CONCEPT
 
 /******************************************************************
 
-Stylesheet: GALLERY
-
-******************************************************************/
-.gal-top {
-  position: relative;
-  margin-bottom: 22vw;
-
-  &__img {
-    height: 60vh;
-  }
-
-  & .c-title {
-    top: 35%;
-    left: 8%;
-
-    & span {
-      color: #fff;
-
-      &::before {
-        background-color: #fff;
-      }
-    }
-
-    & p {
-      padding-top: 7vw;
-      font-size: 1.3rem;
-      line-height: 2;
-      color: $cBlack;
-      font-weight: 100;
-    }
-  }
-
-  .c-txt-md {
-    margin-top: 5vw;
-    text-align: center;
-  }
-}
-
-.gal-contents {
-  &__txtarea {
-    text-align: center;
-    margin: 5vw 0 25vw 0;
-    letter-spacing: 3px;
-  }
-}
-
-/******************************************************************
-
 Stylesheet: MENU
 
 ******************************************************************/

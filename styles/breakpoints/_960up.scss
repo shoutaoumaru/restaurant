@@ -428,47 +428,6 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//* *  * * * * * * * gallery-page * * * * * * * * * *
-.superwrapper {
-  .gal-top {
-
-    & .c-title {
-      & span {
-        font-size: 2rem;
-        color: $cBlack;
-
-        &::before {
-          background-color: $cBlack;
-        }
-      }
-    }
-
-    & img {
-      width: 66%;
-    }
-  }
-
-  .gal-contents {
-    padding-bottom: 20vw;
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    &__item {
-      width: 40%;
-      height: 500px;
-      margin: 5vw 5vw 8vw 5vw;
-
-      & img {
-        height: 50%;
-      }
-    }
-  }
-}
-
 //* * * * * * * * * menu-page * * * * * * * * * *
 .superwrapper {
   .menu-top {
