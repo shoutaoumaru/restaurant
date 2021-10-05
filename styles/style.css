@@ -659,7 +659,7 @@ Stylesheet: MENU
 ******************************************************************/
 .menu-top {
   position: relative;
-  margin-bottom: 30vw;
+  margin-bottom: 10vw;
 }
 
 .menu-top__img {
@@ -716,44 +716,6 @@ Stylesheet: MENU
   font-size: 0.8rem;
   font-weight: 100;
   line-height: 2.5;
-}
-
-.menu-contents .tab-group {
-  margin-bottom: 15vw;
-}
-
-.menu-contents .panel-group {
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.menu-contents .lunch__item {
-  padding-bottom: 8vw;
-}
-
-.menu-contents .lunch__photo {
-  padding: 8vw;
-}
-
-.menu-contents .lunch__txt {
-  font-size: 1rem;
-}
-
-.menu-contents .dinner__txt {
-  padding-bottom: 8vw;
-}
-
-.menu-contents .drink__item {
-  padding-bottom: 10vw;
-}
-
-.menu-contents .drink__txt {
-  padding-bottom: 8vw;
-}
-
-.menu-contents .drink .c-drink {
-  padding-top: 5vw;
-  font-size: 1rem;
 }
 
 /******************************************************************
@@ -2305,6 +2267,18 @@ Stylesheet: NEWS
           transition-delay: 15.6s;
 }
 
+.pdf-link {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pdf-link a {
+  border: 1px solid #d8d8d8;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #3b3b3b;
+}
+
 .tab-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2313,6 +2287,10 @@ Stylesheet: NEWS
       justify-content: space-around;
   padding-bottom: 3vw;
   border-bottom: 1px solid #8f8f8f;
+}
+
+.tab-group .tab {
+  cursor: pointer;
 }
 
 .panel {
@@ -2326,7 +2304,53 @@ Stylesheet: NEWS
 }
 
 .panel.is-show {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panel-group {
+  padding: 10vw 0vw;
+}
+
+@media (min-width: 600px) {
+  .panel-group {
+    padding: 2vw 0;
+  }
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.panel__item {
+  width: 47%;
+  padding: 3vw 0;
+}
+
+.panel__img {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 960px) {
+  .panel__item {
+    width: 30%;
+    padding: 3vw 0;
+  }
+  .panel .name {
+    font-size: 24px;
+  }
+  .panel .price {
+    font-size: 24px;
+  }
+  .panel__img {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -2461,53 +2485,6 @@ Stylesheet: 600px以上のモニタで適用
   }
   .superwrapper .menu-contents .menu-title {
     padding-bottom: 10vw;
-  }
-  .superwrapper .menu-contents .tab-group {
-    margin-bottom: 5vw;
-  }
-  .superwrapper .menu-contents .lunch-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .superwrapper .menu-contents .lunch__item {
-    width: 50%;
-  }
-  .superwrapper .menu-contents .dinner-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .superwrapper .menu-contents .dinner__txt {
-    width: 50%;
-    padding-bottom: 5vw;
-  }
-  .superwrapper .menu-contents .drink-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .superwrapper .menu-contents .drink__item {
-    width: 50%;
-    padding-bottom: 6vw;
-  }
-  .superwrapper .menu-contents .drink .c-drink {
-    padding-top: 2vw;
   }
   .superwrapper .ac-top {
     margin-bottom: 8vh;
@@ -2888,7 +2865,7 @@ Stylesheet: 960px以上のモニタで適用
     padding-left: 5vw;
   }
   .superwrapper .menu-top {
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
   }
   .superwrapper .menu-top__img__cover {
     width: 66%;
@@ -2905,68 +2882,14 @@ Stylesheet: 960px以上のモニタで適用
   .superwrapper .menu-contents {
     margin-bottom: 10vw;
   }
+  .superwrapper .menu-contents .menu-title {
+    padding-bottom: 3vw;
+  }
   .superwrapper .menu-contents .menu-title span {
     font-size: 2rem;
   }
   .superwrapper .menu-contents .menu-title p {
     font-size: 1.2rem;
-  }
-  .superwrapper .menu-contents .tab-group {
-    font-size: 1.5rem;
-  }
-  .superwrapper .menu-contents .lunch__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .superwrapper .menu-contents .lunch__photo {
-    padding: 0 1vw 3vw 0;
-  }
-  .superwrapper .menu-contents .lunch__photo img {
-    width: 60%;
-  }
-  .superwrapper .menu-contents .lunch__item {
-    width: 50%;
-  }
-  .superwrapper .menu-contents .dinner__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .superwrapper .menu-contents .dinner__txt {
-    font-size: 1.2rem;
-    width: 50%;
-  }
-  .superwrapper .menu-contents .drink__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .superwrapper .menu-contents .drink__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 1.2rem;
-  }
-  .superwrapper .menu-contents .drink__block .c-drink {
-    padding-left: 5vw;
-  }
-  .superwrapper .menu-contents .drink__item {
-    padding-bottom: 10vw;
   }
   #c-access .c-access-wrap {
     display: -webkit-box;

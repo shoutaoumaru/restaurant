@@ -201,52 +201,6 @@ Stylesheet: 600px以上のモニタで適用
     .menu-title {
       padding-bottom: 10vw;
     }
-
-    & .tab-group {
-      margin-bottom: 5vw;
-    }
-
-    & .lunch {
-      &-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      &__item {
-        width: 50%;
-      }
-    }
-
-    & .dinner {
-      &-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      &__txt {
-        width: 50%;
-        padding-bottom: 5vw;
-      }
-    }
-
-    & .drink {
-      &-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      &__item {
-        width: 50%;
-        padding-bottom: 6vw;
-      }
-
-      & .c-drink {
-        padding-top: 2vw;
-      }
-    }
   }
 }
 

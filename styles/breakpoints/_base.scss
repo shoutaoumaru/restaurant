@@ -659,7 +659,7 @@ Stylesheet: MENU
 ******************************************************************/
 .menu-top {
   position: relative;
-  margin-bottom: 30vw;
+  margin-bottom: 10vw;
 
   &__img {
     height: 60vh;
@@ -714,50 +714,6 @@ Stylesheet: MENU
       font-size: 0.8rem;
       font-weight: 100;
       line-height: 2.5;
-    }
-  }
-
-  .tab-group {
-    margin-bottom: 15vw;
-  }
-
-  .panel-group {
-    text-align: center;
-    letter-spacing: 2px;
-  }
-
-  .lunch {
-    &__item {
-      padding-bottom: 8vw;
-    }
-
-    &__photo {
-      padding: 8vw;
-    }
-
-    &__txt {
-      font-size: 1rem;
-    }
-  }
-
-  .dinner {
-    &__txt {
-      padding-bottom: 8vw;
-    }
-  }
-
-  .drink {
-    &__item {
-      padding-bottom: 10vw;
-    }
-
-    &__txt {
-      padding-bottom: 8vw;
-    }
-
-    .c-drink {
-      padding-top: 5vw;
-      font-size: 1rem;
     }
   }
 }
