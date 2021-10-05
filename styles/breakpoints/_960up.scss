@@ -185,8 +185,8 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//#instagram
-.p-instagram {
+//#gallery
+.p-gallery {
   padding-bottom: 20vw;
 
   &__img {
@@ -431,7 +431,7 @@ Stylesheet: 960px以上のモニタで適用
 //* * * * * * * * * menu-page * * * * * * * * * *
 .superwrapper {
   .menu-top {
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 
     &__img__cover {
       width: 66%;
@@ -456,6 +456,7 @@ Stylesheet: 960px以上のモニタで適用
     margin-bottom: 10vw;
 
     & .menu-title {
+      padding-bottom: 3vw;
 
       & span {
         font-size: 2rem;
@@ -463,64 +464,6 @@ Stylesheet: 960px以上のモニタで適用
 
       & p {
         font-size: 1.2rem;
-      }
-    }
-
-    & .tab-group {
-      font-size: 1.5rem;
-    }
-
-    & .lunch {
-      &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-
-      &__photo {
-        padding: 0 1vw 3vw 0;
-
-        & img {
-          width: 60%;
-        }
-      }
-
-      &__item {
-        width: 50%;
-      }
-    }
-
-    & .dinner {
-      &__list {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      &__txt {
-        font-size: 1.2rem;
-        width: 50%;
-      }
-    }
-
-    & .drink {
-      &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-      &__block {
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.2rem;
-
-        & .c-drink {
-          padding-left: 5vw;
-        }
-      }
-
-      &__item {
-        padding-bottom: 10vw;
       }
     }
   }
