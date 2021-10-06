@@ -56,6 +56,8 @@ Stylesheet: 600px以上のモニタで適用
 
 //#top
 .p-top {
+  padding-bottom: 10vw;
+
   & .swiper-container {
     height: 100vh;
   }
@@ -66,18 +68,40 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
+//#info
+.p-info {
+  margin-bottom: 10vw;
+
+  &__time {
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    & div {
+      width: 33%;
+    }
+  }
+}
+
 //#concept
 .p-concept {
-  padding-bottom: 20vw;
+  padding-bottom: 10vw;
 
   .c-img {
+
     & img {
       height: 45vh;
     }
   }
 
+  &__img {
+    width: 70%;
+  }
+
   .c-txtarea {
-    top: 58%;
+    top: 28%;
+    left: 45%;
+    width: 50%;
 
     & .ja {
       font-size: 0.8rem;
@@ -104,30 +128,60 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//#gallery
-.p-gallery {
-  padding-bottom: 30vw;
+//#instagram
+.p-instagram {
+  padding-bottom: 10vw;
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & img {
+      width: 50%;
+    }
+  }
 }
 
 //#menu
 .p-menu {
-  padding-bottom: 35vw;
+  padding-bottom: 10vw;
 
   & .view-pc {
     display: none;
   }
 
-  & .c-txtarea {
-    top: 50%;
+  &__img {
+    width: 70%;
+  }
+
+  .c-txtarea {
+    top: 28%;
+    left: 45%;
+    width: 50%;
+
+    & .ja {
+      font-size: 0.8rem;
+    }
   }
 }
 
 //#access
 .p-access {
-  padding-bottom: 20vw;
+  padding-bottom: 10vw;
+
+  &__img {
+    width: 70%;
+  }
 
   .c-txtarea {
-    top: 58%;
+    top: 28%;
+    left: 45%;
+    width: 50%;
+
+    & .ja {
+      font-size: 0.8rem;
+    }
   }
 }
 

@@ -55,6 +55,23 @@ img {
   height: 55vh;
 }
 
+.bg {
+  position: relative;
+}
+
+.bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #3b3b3b;
+  opacity: .3;
+  z-index: 10;
+}
+
 .c-title {
   position: absolute;
   top: 20%;
@@ -201,7 +218,7 @@ img {
 
 .icon-insta {
   position: relative;
-  padding-left: 10vw;
+  padding-left: 30px;
   color: #3b3b3b;
   border-bottom: 1px solid #a0a0a0;
   padding-bottom: 5px;
@@ -221,6 +238,17 @@ img {
   background-size: contain;
   height: 20px;
   width: 20px;
+}
+
+@media (min-width: 960px) {
+  .icon-insta {
+    font-size: 34px;
+    padding-left: 40px;
+  }
+  .icon-insta::before {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .header {
@@ -2392,6 +2420,9 @@ Stylesheet: 600px以上のモニタで適用
     top: 32px;
     right: 55px;
   }
+  .p-top {
+    padding-bottom: 10vw;
+  }
   .p-top .swiper-container {
     height: 100vh;
   }
@@ -2399,14 +2430,34 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 16px;
     bottom: -70px;
   }
+  .p-info {
+    margin-bottom: 10vw;
+  }
+  .p-info__time {
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .p-info__time div {
+    width: 33%;
+  }
   .p-concept {
-    padding-bottom: 20vw;
+    padding-bottom: 10vw;
   }
   .p-concept .c-img img {
     height: 45vh;
   }
+  .p-concept__img {
+    width: 70%;
+  }
   .p-concept .c-txtarea {
-    top: 58%;
+    top: 28%;
+    left: 45%;
+    width: 50%;
   }
   .p-concept .c-txtarea .ja {
     font-size: 0.8rem;
@@ -2424,23 +2475,52 @@ Stylesheet: 600px以上のモニタで適用
   .p-concept .p-speciality__txt {
     font-size: 0.8rem;
   }
-  .p-gallery {
-    padding-bottom: 30vw;
+  .p-instagram {
+    padding-bottom: 10vw;
+  }
+  .p-instagram__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .p-instagram__img img {
+    width: 50%;
   }
   .p-menu {
-    padding-bottom: 35vw;
+    padding-bottom: 10vw;
   }
   .p-menu .view-pc {
     display: none;
   }
+  .p-menu__img {
+    width: 70%;
+  }
   .p-menu .c-txtarea {
-    top: 50%;
+    top: 28%;
+    left: 45%;
+    width: 50%;
+  }
+  .p-menu .c-txtarea .ja {
+    font-size: 0.8rem;
   }
   .p-access {
-    padding-bottom: 20vw;
+    padding-bottom: 10vw;
+  }
+  .p-access__img {
+    width: 70%;
   }
   .p-access .c-txtarea {
-    top: 58%;
+    top: 28%;
+    left: 45%;
+    width: 50%;
+  }
+  .p-access .c-txtarea .ja {
+    font-size: 0.8rem;
   }
   .p-news {
     padding-bottom: 15vw;
@@ -2566,7 +2646,9 @@ Stylesheet: 960px以上のモニタで適用
   }
   .c-img01 img {
     height: 50vh;
-    width: 50%;
+  }
+  .c-img01 .bg {
+    width: 60%;
   }
   .readmore {
     font-size: 1.2rem;
@@ -2649,10 +2731,6 @@ Stylesheet: 960px以上のモニタで適用
   .p-concept .c-title .txt {
     color: #3b3b3b;
   }
-  .p-concept .c-txtarea {
-    top: 30vw;
-    left: 40vw;
-  }
   .p-concept .c-txtarea .ja {
     font-size: 1.4rem;
   }
@@ -2665,33 +2743,6 @@ Stylesheet: 960px以上のモニタで適用
   .p-news__link {
     padding: 4vw 0;
     font-size: 1.2rem;
-  }
-  .p-gallery {
-    padding-bottom: 20vw;
-  }
-  .p-gallery__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .p-gallery__img img {
-    width: 50%;
-    border: 10px solid #fff;
-  }
-  .p-gallery__img .photo3 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .p-gallery__img .photo2 {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
   }
   .p-menu {
     padding-bottom: 20vw;
@@ -2708,10 +2759,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .p-menu .c-title .txt::before {
     width: 50vw;
-  }
-  .p-menu .c-txtarea {
-    top: 40vw;
-    left: 40vw;
   }
   .p-menu .c-txtarea .ja {
     font-size: 1.4rem;
@@ -2747,8 +2794,6 @@ Stylesheet: 960px以上のモニタで適用
     width: 50vw;
   }
   .p-access .c-txtarea {
-    top: 55%;
-    left: 40vw;
     padding: 4vw;
   }
   .p-access .c-txtarea .ja {
@@ -2760,9 +2805,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .p-news__item {
     padding: 3vw 3vw;
-  }
-  .p-info {
-    margin-bottom: 15vw;
   }
   .p-info h3 {
     font-size: 1.6rem;
