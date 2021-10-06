@@ -84,7 +84,7 @@
     <!-- /.svg-animation -->
     <header id="header" class="header">
       <div class="mobile-container">
-        <div class=" logo__img">
+        <div class="logo__img">
           <a class="animsition-link" href="/">
             <div class="logo"></div>
           </a>
@@ -107,19 +107,16 @@
         <nav class="pc-nav">
           <ul class="pc-nav-list">
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/concept/"><span>CONCEPT</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/')); ?>"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/gallery/"><span>GALLERY</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/concept')); ?>"><span>CONCEPT</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/menu/"><span>MENU</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>"><span>MENU</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/access/"><span>ACCESS</span></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/"><span>NEWS</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/access')); ?>"><span>ACCESS</span></a>
             </li>
           </ul>
         </nav>
@@ -329,22 +326,19 @@
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/">TOP</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/')); ?>">TOP</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/concept/">CONCEPT</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/concept')); ?>">CONCEPT</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/gallery/">GALLERY</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">MENU</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/menu/">MENU</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/access')); ?>">ACCESS</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/access/">ACCESS</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/">NEWS</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">NEWS</a>
           </li>
         </ul>
         <div class="reserve-btn-wrap">

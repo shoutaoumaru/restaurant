@@ -40,9 +40,6 @@
               <a class="pc-nav-link animsition-link" href="/"><span>TOP</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/gallery')); ?>"><span>GALLERY</span></a>
-            </li>
-            <li class="pc-nav-item">
               <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>"><span>MENU</span></a>
             </li>
             <li class="pc-nav-item">
@@ -176,9 +173,6 @@
           </li>
           <li class="mobile-menu__item">
             <a class="animsition-link" href="<?php echo esc_url( home_url('/concept')); ?>">CONCEPT</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="<?php echo esc_url( home_url('/gallery')); ?>">GALLERY</a>
           </li>
           <li class="mobile-menu__item">
             <a class="animsition-link" href="<?php echo esc_url( home_url('/menu')); ?>">MENU</a>

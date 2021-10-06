@@ -52,7 +52,10 @@ Stylesheet: 960px以上のモニタで適用
 .c-img01 {
   & img {
     height: 50vh;
-    width: 50%;
+  }
+
+  & .bg {
+    width: 60%;
   }
 }
 
@@ -162,9 +165,6 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .c-txtarea {
-    top: 30vw;
-    left: 40vw;
-
     & .ja {
       font-size: 1.4rem;
     }
@@ -182,30 +182,6 @@ Stylesheet: 960px以上のモニタで適用
   &__link {
     padding: 4vw 0;
     font-size: 1.2rem;
-  }
-}
-
-//#gallery
-.p-gallery {
-  padding-bottom: 20vw;
-
-  &__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    & img {
-      width: 50%;
-      border: 10px solid #fff;
-    }
-
-    & .photo3 {
-      order: 3;
-    }
-
-    & .photo2 {
-      order: 3;
-    }
   }
 }
 
@@ -231,8 +207,6 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   & .c-txtarea {
-    top: 40vw;
-    left: 40vw;
 
     & .ja {
       font-size: 1.4rem;
@@ -277,8 +251,6 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   .c-txtarea {
-    top: 55%;
-    left: 40vw;
     padding: 4vw;
 
     & .ja {
@@ -302,7 +274,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //#info
 .p-info {
-  margin-bottom: 15vw;
 
   & h3 {
     font-size: 1.6rem;
